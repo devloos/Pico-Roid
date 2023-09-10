@@ -1,21 +1,16 @@
-import RPi.GPIO as GPIO
-import util
+import RPi.GPIO as IO
 
-GPIO.setmode(GPIO.BCM)
+IO.setmode(IO.BCM)
 
+IO.setup(23, IO.OUT)
+IO.setup(24, IO.OUT)
 
-GPIO.setup(23, GPIO.OUT)
-GPIO.setup(24, GPIO.OUT)
-
-GPIO.setup(22, GPIO.OUT)
-GPIO.setup(27, GPIO.OUT)
+IO.setup(22, IO.OUT)
+IO.setup(27, IO.OUT)
 
 
 try:
-    stop()
     while True:
-        reverse_square()
-
+        pass
 except:
-    stop()
-    GPIO.cleanup()
+    IO.cleanup()

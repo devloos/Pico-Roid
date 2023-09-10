@@ -1,41 +1,41 @@
-import RPi.GPIO as GPIO
+import RPi.GPIO as IO
 
 
 def stop():
-    GPIO.output(23, GPIO.HIGH)
-    GPIO.output(24, GPIO.HIGH)
+    IO.output(23, IO.HIGH)
+    IO.output(24, IO.HIGH)
 
-    GPIO.output(22, GPIO.HIGH)
-    GPIO.output(27, GPIO.HIGH)
+    IO.output(22, IO.HIGH)
+    IO.output(27, IO.HIGH)
 
 
 def forward():
-    GPIO.output(23, GPIO.HIGH)
-    GPIO.output(24, GPIO.LOW)
+    IO.output(23, IO.HIGH)
+    IO.output(24, IO.LOW)
 
-    GPIO.output(22, GPIO.LOW)
-    GPIO.output(27, GPIO.HIGH)
+    IO.output(22, IO.LOW)
+    IO.output(27, IO.HIGH)
 
 
 def backward():
-    GPIO.output(23, GPIO.LOW)
-    GPIO.output(24, GPIO.HIGH)
+    IO.output(23, IO.LOW)
+    IO.output(24, IO.HIGH)
 
-    GPIO.output(22, GPIO.HIGH)
-    GPIO.output(27, GPIO.LOW)
+    IO.output(22, IO.HIGH)
+    IO.output(27, IO.LOW)
 
 
 def left():
-    GPIO.output(23, GPIO.HIGH)
-    GPIO.output(24, GPIO.HIGH)
+    IO.output(23, IO.HIGH)
+    IO.output(24, IO.HIGH)
 
-    GPIO.output(22, GPIO.HIGH)
-    GPIO.output(27, GPIO.LOW)
+    IO.output(22, IO.HIGH)
+    IO.output(27, IO.LOW)
 
 
 def right():
-    GPIO.output(23, GPIO.HIGH)
-    GPIO.output(24, GPIO.LOW)
+    IO.output(23, IO.HIGH)
+    IO.output(24, IO.LOW)
 
-    GPIO.output(22, GPIO.HIGH)
-    GPIO.output(27, GPIO.HIGH)
+    IO.output(22, IO.HIGH)
+    IO.output(27, IO.HIGH)

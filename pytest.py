@@ -1,14 +1,14 @@
-import RPi.GPIO as GPIO
+import RPi.GPIO as IO
 import time
 
-GPIO.setmode(GPIO.BCM)
+IO.setmode(IO.BCM)
 
-GPIO.setup(12, GPIO.OUT)
-GPIO.setup(27, GPIO.OUT)
+IO.setup(12, IO.OUT)
+IO.setup(27, IO.OUT)
 
-GPIO.output(27, GPIO.HIGH)
+IO.output(27, IO.HIGH)
 
-pwm = GPIO.PWM(12, 100)
+pwm = IO.PWM(12, 100)
 pwm.start(100)
 
 try:
@@ -22,4 +22,4 @@ try:
 
 except:
     pwm.stop()
-    GPIO.cleanup()
+    IO.cleanup()
