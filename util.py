@@ -1,7 +1,7 @@
 import RPi.GPIO as IO
 
 
-def stop():
+def reset():
     IO.output(23, IO.HIGH)
     IO.output(24, IO.HIGH)
 
